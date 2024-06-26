@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb</title>
+    
+    <!-- Font Awesome for the logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <i class="fa fa-leaf"></i>GreenThumb
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="plants">
+            <h2 class="section-title">Indoor Plants</h2>
+            <div class="plant1" id="indoor-plant-list">
+                <!-- Example indoor plant items -->
+                <div class="plant" data-id="1">
+                    <img src="image/fiddle leaf1.jpeg" alt="Indoor Plant 1">
+                    <h1>Fiddle Leaf Plant</h1>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant" data-id="2">
+                    <img src="image/snake5.png" alt="Indoor Plant 2">
+                    <h1>Snake Plant</h1>
+                    <p>$15.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant" data-id="3">
+                    <img src="image/spider3.jpeg" alt="Indoor Plant 3">
+                    <h1>Spider Plant</h1>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="plants">
+            <h2 class="section-title">Outdoor Plants</h2>
+            <div class="plant1" id="outdoor-plant">
+                <div class="plant" data-id="4">
+                    <img src="image/lavender1.jpeg" alt="Outdoor Plant 1">
+                    <h1>Lavender Plant</h1>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant" data-id="5">
+                    <img src="image/roses2.jpeg" alt="Outdoor Plant 2">
+                    <h1>Roses Plant</h1>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant" data-id="6">
+                    <img src="image/tulip.jpeg" alt="Outdoor Plant 3">
+                    <h1>Tulip Plant</h1>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2 class="section-title">Shopping Cart</h2>
+            <div class="plant">
+                <ul id="cart-items" class="cart-items">
+                </ul>
+                <p id="total" class="total">Total: $0.00</p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/shop.js"></script>
+</body>
+</html>

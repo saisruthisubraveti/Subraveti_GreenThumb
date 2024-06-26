@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb</title>
+    
+    <!-- Font Awesome for the logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <i class="fa fa-leaf"></i>GreenThumb
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="analytics1.html">Analytics</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1><center>Shop Analytics</center></h1>
+    <main class="main-content">
+        <section class="analytics-section">
+            <div class="section" id="cart-summary-section">
+                <h2>Cart Summary</h2>
+                <ul id="cart-summary"></ul>
+            </div>
+            <div class="section" id="top-selling-section">
+                <h2>Top Selling Plants</h2>
+                <ul id="top-selling"></ul>
+            </div>
+        </section>
+        <section class="charts">
+            <div class="qchart">
+            <h2><center> Quantity Chart</center></h2>
+            <canvas id="quantityChart"></canvas>
+            <div class="rchart">
+            <h2><center>Revenue Chart</center></h2>
+            <canvas id="revenueChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="js/analytics.js"></script>
+</body>
+</html>
